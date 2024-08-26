@@ -1,0 +1,91 @@
+body {
+	width: 100%;
+	height: 100%;
+	background-color: darkcyan;
+	font-family: Tahoma;
+	color: white;
+	font-size: 14px;
+}
+
+h1 {
+	margin: auto auto;
+	text-align: center;
+	font-size: 40px;
+}
+
+p {
+	text-align: center;
+	font-style: italic;
+	font-size: 20px;
+}
+
+form {
+	width: 100%;
+	max-width: 600px;
+	min-width: 300px;
+	margin: 0 auto;
+	padding-top: 2em;
+}
+
+fieldset {
+
+	padding-bottom: 2rem 0;
+	border: 3px solid #000000;	
+}
+
+.personal-info {
+
+	margin-top: 5px;
+	margin-bottom: 10px;
+}
+
+.other-info {
+
+	border-top: 0px;
+}
+
+
+label {
+	display: block;
+	font-weight: bold;
+	margin: 0.5rem 0;
+	font-size: 14px;
+}
+
+.label-title {
+	font-size: 18px;
+}
+
+input, textarea, select {
+	margin: 10px 0 0 0;
+	width: 100%;
+	min-height: 2em;
+}
+
+input, textarea {
+	background-color: turquoise;
+	color: white;
+}
+
+.inline {
+	width: unset;
+	margin: 0 0.5em 0 0;
+	vertical-align: middle;
+}
+
+label[id="option-label"] {
+
+	display: block;
+	margin-right: -8px;
+}
+
+input[id="submit"] {
+	display: block;
+	width: 50%;
+	min-width: 250px;
+	height: 2em;
+	margin: 1em auto;
+	font-weight: bold;
+	background-color: white;
+	color: darkcyan;
+}

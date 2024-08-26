@@ -1,0 +1,114 @@
+/* a css comment */
+
+/*
+ * also a css comment
+ */
+
+
+/* element selector */
+h1, h2, p {
+  text-align: center;
+}
+
+
+body {
+  background-image: url(https://cdn.freecodecamp.org/curriculum/css-cafe/beans.jpg);
+  font-family: sans-serif;
+  padding: 20px;
+}
+
+h1, h2 {
+  font-family: Impact, serif; /* ,serif is fallback value for the font-family */
+}
+
+h1{
+  font-size: 40px;
+  margin-top: 0px;
+  margin-bottom: 15px;
+}
+
+h2 {
+  font-size: 30px;
+}
+
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: -25px;  /* or h2 margin-bottom: 0px; */
+}
+
+hr {
+  height: 2px;
+  background-color: brown;
+  border-color: brown;
+}
+
+.established {
+  font-style: italic;
+}
+
+.menu {
+  width: 80%; /* 80% of the width of the its parent: body */
+  max-width: 500px; /* On a very wide screen, the coffee and dessert appear far apart from their prices
+                       max-width property to the menu class with a value of 500px prevent it from growing too wide. */
+  background-color: burlywood;
+  margin-left: auto;  /* to center div horizontally */
+  margin-right: auto;
+  padding: 20px;  /* to add the same space to all types of padding */
+  
+  /* to add space between content and text 
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  */
+}
+
+.item p {
+  display: inline-block;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  font-size: 18px;
+}
+
+.flavor, .dessert {
+  text-align: left;
+  width: 75%;
+}
+
+.price {
+  text-align: right;
+  width: 25%
+}
+
+.bottom-line {
+  margin-top: 25px;
+}
+
+
+/* FOOTER */
+
+footer {
+  font-size: 14px;
+}
+
+a {
+  color: black;
+}
+
+a:visited {
+  color: black;
+}
+
+a:hover {
+  color: brown;
+}
+
+a:active {
+  color: brown;
+}
+
+.address {
+  margin-bottom: 5px;
+}

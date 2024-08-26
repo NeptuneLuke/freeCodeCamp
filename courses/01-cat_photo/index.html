@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <title>CatPhotoApp</title>
+  </head>
+
+  <body>
+    <main>
+      <h1>Cat Photo App </h1>
+
+      <section id="sec1">
+        <h2>Cat Photos</h2>
+
+        <!-- target="_blank"  opens a new browser tab -->
+        <p>See more <a href="https://freecatphotoapp.com" target="_blank">cat photos</a> in our gallery</p>
+
+        <img src="https://cdn.freecodecamp.org/platform/universal/fcc_secondary.svg" alt="Image failed">
+
+        <a href="https://freecatphotoapp.com" target="_blank">
+          <img src= "https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg" alt="A cute orange cat lying on its back">
+        </a>
+
+        <a href="https://freecatphotoapp.com">link to cat pics</a>
+      </section>
+
+      <section id="sec2">
+        <h2>Cat lists</h2>
+        <h3>Things cats love: </h3>
+
+        <!-- unordered list-->
+        <ul>
+          <li>cat nip</li>
+          <li>laser pointers</li>
+          <li>lasagna</li>
+        </ul>
+
+        <!-- figure element represents self-contained content and allow you to associate an image with a caption -->
+        <figure>
+          <img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/lasagna.jpg" alt="A slice of lasagna on a plate">
+          <figcaption>Cats <em>love</em> lasagna</figcaption>
+        </figure>
+
+        <h3>Top 3 things cats hate:</h3>
+        <ol>
+          <li>dogs</li>
+          <li>thunder</li>
+          <li>other cats</li>
+        </ol>
+
+        <figure>
+          <img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/cats.jpg" alt="Five cats looking around a field.">
+          <figcaption>Cats <strong>hate</strong> other cats</figcaption>
+        </figure>
+      </section>
+
+      <section id="sec3">
+        <h2>Cat form</h2>
+
+        <form action="https://freecatphotoapp.com/submit-cat-photo"> </form>
+        <input type="text" name="catphotourl" placeholder="cat photo URL" required>
+        <!-- The default behavior of clicking a form button without any attributes submits the form to the location specified in the form's action attribute. -->
+        <button type="submit">Submit</button>
+
+        <!-- to group inputs -->
+        <fieldset>
+
+          <!--
+            The legend element acts as a caption for the content in the fieldset element.
+            It gives users context about what they should enter into that part of the form.
+          -->
+          <legend>Is your cat an indoor or outdoor cat?</legend>
+
+          <!--
+            Label elements are used to help associate the text for an input element with the
+            input element itself: makes it so clicking the word Indoor also selects the corresponding radio button.
+            A radio button with the option/name Indoor
+            Notice that both radio buttons can be selected at the same time. To make it so selecting one radio button
+            automatically deselects the other, both buttons must have a name attribute with the same value.
+            Add the name attribute with the value indoor-outdoor to both radio buttons.
+            The form data for the button is based on its name and value attributes
+          -->
+          <label> <input id="indoor" type="radio" name="indoor-outdoor" value="indoor">Indoor</label>
+          <label> <input id="outdoor" type="radio" name="indoor-outdoor" value="outdoor">Outdoor</label>
+        </fieldset>
+
+        <fieldset>
+          <legend>Is your cat an indoor or outdoor cat?</legend>
+          <label><input id="indoor" type="radio" name="indoor-outdoor" value="indoor" checked>Indoor</label>
+          <label><input id="outdoor" type="radio" name="indoor-outdoor" value="outdoor">Outdoor</label>
+        </fieldset>
+
+        <fieldset>
+          <legend>What's your cat's personality?</legend>
+          <input id="loving" value="loving" type="checkbox" name="personality" checked> <label for="loving">Loving</label>
+          <input id="lazy" value="lazy" type="checkbox" name="personality"> <label for="lazy">Lazy</label>
+          <input id="energetic" value="energetic" type="checkbox" name="personality"> <label for="energetic">Energetic</label>
+        </fieldset>
+      </section>
+    </main>
+  <body>
+
+  <footer>
+    <p> Made with the help of <a href="https://www.freecodecamp.org">freeCodeCamp.org</a> </p>
+  </footer>
+
+</html>

@@ -1,0 +1,78 @@
+h1 {
+	text-align: center;
+}
+
+.container {
+  background-color: rgb(255, 255, 255);
+  padding: 10px 0px; /* both top and bottom padding to 10px - left and right padding to 0px */
+}
+
+.marker {
+  width: 200px;
+  height: 25px;
+  margin: 10px auto; /* when margin has two values, it sets margin-top and margin-bottom to the first value, 
+  					    and margin-left and margin-right to the second value */
+  /* 
+  margin: auto; sets all type of margins to auto, centering the div 
+  */
+}
+
+.red {
+
+	background: linear-gradient(rgb(122, 74, 14), rgb(245, 62, 113), rgb(162, 27, 27));
+	/*  background-color: rgb(255,0,0);  #FF0000  hsl(0,100%,50%);*/
+
+	/* to make a gradient linear-gradient can have more than 2 colors of gradient
+	   to set the percentage of the space of each color use perc_value% right after the color
+	background: linear-gradient(90deg, rgb(255, 0, 0), rgb(0, 255, 0));
+	background: linear-gradient(180deg, rgb(255, 0, 0) 0%, rgb(0, 255, 0) 50%, rgb(0, 0, 255) 100%);
+	*/
+
+	/* The height and width of the shadow is determined by the height and width of the element it's applied to. 
+	   You can also use an optional spreadRadius value to spread out the reach of the shadow 
+	   Edges of the shadow are sharp. This is because there is an optional blurRadius value
+	   If a blurRadius value isn't included, it defaults to 0 and produces sharp edges. 
+	   The higher the value the greater the blurring
+	   
+	   box-shadow: offsetX offsetY blurRadius spreadRadius color;
+
+	   */
+	box-shadow: 0 0 20px 0 rgba(83, 14, 14, 0.8);
+}
+
+.green {
+  /* background-color: rgb(0,255,0);  #00FF00  hsl(120,100%,50%); */
+  background: linear-gradient(#55680D, #71F53E, #116C31);
+  box-shadow: 0 0 20px 0 #3B7E20CC; 
+}
+
+.blue {
+  /* background-color: rgb(0,0,255);  #0000FF  hsl(240,100%,50%); */
+  background: linear-gradient(hsl(186, 76%, 16%), hsl(223, 90%, 60%), hsl(240, 56%, 42%));
+  box-shadow: 0 0 20px 0 hsla(223,59%,31%,0.8);
+}
+
+.sleeve {
+  width: 110px;
+  height: 25px;
+  background-color: rgba(255,255,255, 0.5);
+  /* 
+  background-color: white;
+  opacity: 0.5;
+  */
+  border-left: 10px double rgba(0,0,0,75%);
+  /*
+  border-left-width: 10px;
+  border-left-style: solid;
+  border-left-color: black;
+  */
+}
+
+.cap {
+  width: 60px;
+  height: 25px;
+}
+
+.cap, .sleeve {
+  display: inline-block;
+}

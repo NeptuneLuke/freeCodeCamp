@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+
+      <!--
+        The viewport is the user's visible area of a web page.
+        It varies with the device - it will be smaller on a mobile phone than on a computer screen.
+        The width=device-width part sets the width of the page to follow the screen-width of the device
+        (which will vary depending on the device).
+        The initial-scale=1.0 part sets the initial zoom level when the page is first loaded by the browser.
+      -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="styles.css" rel="stylesheet">
+    <title>Cafe Menu</title>
+  </head>
+
+  <body>
+    <div class="menu">
+      <main>
+        <h1>CAMPER CAFE</h1>
+        <p class="established">Est. 2020</p>
+
+        <!--
+          You can use an hr element to display a divider between sections of different content 
+          will make it appear as a thin light grey line
+        -->
+        <hr>
+
+        <section id="coffe-flavor">
+          <h2>Coffee</h2>
+          <img src="https://cdn.freecodecamp.org/curriculum/css-cafe/coffee.jpg" alt="coffee icon">
+
+          <!-- article elements commonly contain multiple elements that have related information -->
+          <article class="item">
+            <p class="flavor">French Vanilla</p>
+            <p class="price">3.00</p>
+          </article>
+
+          <article class="item">
+            <p class="flavor">Caramel Macchiato</p>
+            <p class="price">3.75</p>
+          </article>
+
+          <article class="item">
+            <p class="flavor">Pumpkin Spice</p>
+            <p class="price">3.50</p>
+          </article>
+
+          <article class="item">
+            <p class="flavor">Hazelnut</p>
+            <p class="price">4.00</p>
+          </article>
+
+          <article class="item">
+            <p class="flavor">Mocha</p>
+            <p class="price">4.50</p>
+          </article>
+        </section>
+
+        <section id="dessert">
+
+          <h2>Desserts</h2>
+          <img src="https://cdn.freecodecamp.org/curriculum/css-cafe/pie.jpg" alt="pie icon">
+
+          <article class="item">
+            <p class="dessert">Donut</p>
+            <p class="price">1.50</p>
+          </article>
+
+          <article class="item">
+            <p class="dessert">Cherry Pie</p>
+            <p class="price">2.75</p>
+          </article>
+
+          <article class="item">
+            <p class="dessert">Cheesecake</p>
+            <p class="price">3.00</p>
+          </article>
+
+          <article class="item">
+            <p class="dessert">Cinnamon Roll</p>
+            <p class="price">2.50</p>
+          </article>
+        </section>
+
+      </main>
+
+      <hr class="bottom-line">
+
+      <footer>
+        <p> <a href="https://www.freecodecamp.org">Visit our website</a> </p>
+        <p class="address">123 Free Code Camp Drive</p>
+      </footer>
+
+    </div>
+  </body>
+
+</html>
