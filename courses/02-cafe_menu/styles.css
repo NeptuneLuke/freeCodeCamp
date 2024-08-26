@@ -18,7 +18,7 @@ body {
 }
 
 h1, h2 {
-  font-family: Impact, serif; /* ,serif is fallback value for the font-family */
+  font-family: "Impact", serif; /* ,serif is fallback value for the font-family */
 }
 
 h1{
@@ -56,8 +56,8 @@ hr {
   margin-left: auto;  /* to center div horizontally */
   margin-right: auto;
   padding: 20px;  /* to add the same space to all types of padding */
-  
-  /* to add space between content and text 
+
+  /* to add space between content and text
   padding-left: 20px;
   padding-right: 20px;
   padding-top: 20px;
