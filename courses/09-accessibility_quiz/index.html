@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Accessibility Quiz" />
+    <link href="./styles.css" rel="stylesheet">
+    <title>Accessibility Quiz</title>
+  </head>
+
+  <body>
+    <header>
+      <img id="logo" src="https://cdn.freecodecamp.org/platform/universal/fcc_primary.svg" alt="freeCodeCamp">
+      <h1>HTML/CSS Quiz</h1>
+      <nav>
+        <ul>
+          <!--
+            To be able to navigate within the page, give each anchor element
+            an href corresponding to the id of the h2 elements
+          -->
+          <li> <a href="#student-info" accesskey="i">INFO</a> </li>
+          <li> <a href="#html-questions" accesskey="h">HTML</a> </li>
+          <li> <a href="#css-questions" accesskey="c">CSS</a> </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <form method="post" action="https://freecodecamp.org/practice-project/accessibility-quiz">
+        <!--
+          The role attribute can be used to indicate the purpose behind an element
+          on the page to assistive technologies. Every region role requires a label,
+          which helps screen reader users understand the purpose of the region.
+          One method for adding a label is to add a heading element inside the region
+          and then reference it with the aria-labelledby attribute.
+        -->
+        <section role="region" aria-labelledby="student-info">
+          <h2 id="student-info">Student Info</h2>
+
+          <div class="info">
+            <label for="student-name">Name:</label>
+            <input type="text" name="student-name" id="student-name">
+          </div>
+
+          <div class="info">
+            <label for="student-email">Email:</label>
+            <input type="email" name="student-email" id="student-email">
+          </div>
+
+          <div class="info">
+            <label for="student-birth">Birth date:</label>
+            <input type="date" name="student-birth" id="student-birth">
+          </div>
+        </section>
+
+        <section role="region" aria-labelledby="html-questions">
+          <h2 id="html-questions">HMTL Questions</h2>
+
+          <div class="question-block">
+            <!--
+              Added span sr-only for screen readers only readable text.
+              Note that sr-only text must be hidden.
+              -->
+            <h3> <span class="sr-only">Question 1</span>1</h3>
+            <fieldset class="question" name="html-question-1">
+              <legend>The <b>legend</b> element represents a caption for the content of its
+                parent <b>fieldset</b> element
+              </legend>
+              <ul class="answers-list">
+                <li>
+                  <label for="q1-a1"> <input id="q1-a1" type="radio" value="true" name="q1">True</label>
+                </li>
+                <li>
+                  <label for="q1-a2"> <input id="q1-a2" type="radio" value="false" name="q1">False</label>
+                </li>
+              </ul>
+            </fieldset>
+          </div>
+
+          <div class="question-block">
+            <h3> <span class="sr-only">Question 2</span>2</h3>
+            <fieldset class="question" name="html-question-2">
+              <legend>A <b>label</b> element nesting an <b>input</b> element is required to have a
+                <b>for</b> attribute with the same value as the input's id
+              </legend>
+              <ul class="answers-list">
+                <li>
+                  <label for="q2-a1"> <input id="q2-a1" type="radio" value="true" name="q2">True</label>
+                </li>
+                <li>
+                  <label for="q2-a2"> <input id="q2-a2" type="radio" value="false" name="q2">False</label>
+                </li>
+              </ul>
+            </fieldset>
+          </div>
+        </section>
+
+        <section role="region" aria-labelledby="css-questions">
+          <h2 id="css-questions">CSS Questions</h2>
+
+          <div class="formrow">
+
+            <div class="question-block">
+              <label for="q3">Are you a frontend developer?</label>
+            </div>
+            <div class="answer">
+              <select id="q3" name="q3" required>
+                <option value="">Select an option</option>
+                <option value="yes">Yes</option>
+                <option value="no">No</option>
+              </select>
+            </div>
+
+            <div class="question-block">
+              <label for="question-submit">Do you have any questions?</label>
+            </div>
+            <div class="answer">
+              <textarea id="question-submit" name="question-submit" rows="10" cols="50"></textarea>
+            </div>
+
+          </div>
+        </section>
+
+        <button type="submit">Send</button>
+      </form>
+    </main>
+
+    <footer>
+      <address>
+        <a href="https://freecodecamp.org">freeCodeCamp</a> <br />
+        San Francisco<br />
+        California<br />
+        USA
+      </address>
+    </footer>
+  </body>
+
+</html>
