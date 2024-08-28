@@ -1,0 +1,63 @@
+* {
+  text-align: center;
+  font-family: "Andale Mono", monospace;
+}
+
+#main {
+  background-color: rgb(200, 200, 200);
+  margin: 20px 20px;
+  padding: 10px;
+}
+
+#img-div {
+  background-color: rgb(225, 225, 225);
+  padding: 20px;
+  margin: 20px;
+}
+
+#tribute-info {
+  text-align: center;
+  padding-bottom: 10px;
+  background-color: rgb(225, 225, 225);
+  margin: 20px;
+  padding: 20px;
+}
+
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#img-book {
+  margin: 0 15px;
+  padding: 15px;
+  width: 100px;
+  height: 100%;
+}
+
+#image {
+  max-width: 100%;
+  padding: 10px;
+}
+
+ul {
+  max-width: 700px;
+  list-style-type: none;
+  display: table;
+  margin: 0 auto;
+}
+
+li {
+  text-align: left;
+  padding: 20px 5px;
+}
+
+#links {
+  margin-bottom: 10px;
+  margin-top: 40px;
+}
+
+a {
+  text-decoration: none; 
+}
